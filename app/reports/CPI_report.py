@@ -7,7 +7,7 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 # Import "app" package
-from app.tools.get_requests import WebRequest
+from ..tools.fred_requests import WebRequest
 
 ### Begin Global Variables ###
 date = datetime.UTC
@@ -18,6 +18,7 @@ set_frequency = "a"
 ### End Global Variables ###
 
 class CPI_data():
+    date_start = start_date
     def clean_cpi_data(cpi_data):
         value_list = []
         observations = cpi_data['observations']

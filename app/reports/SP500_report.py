@@ -7,7 +7,7 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 # Import "app" package
-from app.tools.get_requests import WebRequest
+from ..tools.fred_requests import WebRequest
 
 # Begin Global Variables
 date = datetime.UTC
