@@ -11,16 +11,6 @@ from app.tools.get_requests import WebRequest
 
 # Begin Global Variables
 date = datetime.UTC
-
-# WebRequest Variables
-'''
-observation_start_date = "2026-01-01"
-observation_end_date = "9999-12-31"
-realtime_start_date = "2026-06-16"
-realtime_end_date = "2026-06-16"
-set_frequency = "m"
-'''
-
 # End Global Variables
 
 class SP500():
