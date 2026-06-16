@@ -39,7 +39,7 @@ class SP500():
 
     
     def clean_SP500_data(sp500_data):
-        return sp500_data
+        pass
     
     def main_report():
         start_of_year = SP500.get_start_of_year_value()
