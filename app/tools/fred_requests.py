@@ -42,3 +42,8 @@ class WebRequest():
         output = request.json()
         return output
     
+    def get_fred_nasdaq_series_data(observation_start, observation_end, realtime_start, realtime_end, frequency, series_id="NASDAQCOM", format = json):
+        request = requests.get(f'https://api.stlouisfed.org/fred/series/observations?series_id={series_id}&api_key={api_token}&file_type=json&observation_start={observation_start}&observation_end={observation_end}&realtime_start={realtime_start}&realtime_end={realtime_end}&frequency={frequency}')
+        output = request.json()
+        return output
+    
